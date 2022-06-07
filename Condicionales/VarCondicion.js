@@ -2,62 +2,79 @@ dineroFacu = prompt("¿Cuanto dinero tenes facu?");
 dineroDany = prompt("¿Cuanto dinero tenes dany?");
 dineroClau = prompt("¿Cuanto dinero tienes clau?");
 
-if (dineroFacu >= 1 && dineroFacu <= 3) {
-    alert("Comprate helado de limon")
+if (dineroFacu >= 10 && dineroFacu <= 30) {
+    alert("Comprate helado de limon");
 }
 
-else if (dineroFacu >= 3 && dineroFacu <= 6) {
-    alert("Comprate helado de dulce de leche")
+else if (dineroFacu >= 40 && dineroFacu <= 60) {
+    alert("Comprate helado de dulce de leche");
 }
 
-else if (dineroFacu >= 6 && dineroFacu <= 9) {
-    alert("Comprate helado de chocolate")
+else if (dineroFacu >= 70 && dineroFacu <= 90) {
+    alert("Comprate helado de chocolate");
 }
 
-else if (dineroFacu >= 9 && dineroFacu <= 12) {
-    alert("Comprate helado de tramontana")
+else if (dineroFacu >= 100 && dineroFacu <= 120) {
+    alert("Comprate helado de tramontana");
 }
 
-else {
-    alert("no te alcanza para nada")
-}
-
-if (dineroDany >= 1 && dineroDany <= 3) {
-    alert("Comprate helado de limon")
-}
-
-else if (dineroDany >= 3 && dineroDany <= 6) {
-    alert("Comprate helado de dulce de leche")
-}
-
-else if (dineroDany >= 6 && dineroDany <= 9) {
-    alert("Comprate helado de chocolate")
-}
-
-else if (dineroDany >= 9 && dineroDany <= 12) {
-    alert("Comprate helado de tramontana")
+else if (dineroFacu < 10) {
+    alert("no te alcanza para nada");
 }
 
 else {
-    alert("No te alcanza")
+    alert("el valor ingresado no es correcto.");
 }
 
-if (dineroClau >= 1 && dineroClau <= 3) {
-    alert("Comprate helado de limon")
+
+
+if (dineroDany >= 10 && dineroDany <= 30) {
+    alert("Comprate helado de limon");
 }
 
-else if (dineroClau >= 3 && dineroClau <= 6) {
-    alert("Comprate helado de dulce de leche")
+else if (dineroDany >= 40 && dineroDany <= 60) {
+    alert("Comprate helado de dulce de leche");
 }
 
-else if (dineroClau >= 6 && dineroClau <= 9) {
-    alert("Comprate helado de chocolate")
+else if (dineroDany >= 70 && dineroDany <= 90 {
+    alert("Comprate helado de chocolate");
 }
 
-else if (dineroClau >= 9 && dineroClau <= 12) {
-    alert("Comprate helado de tramontana")
+else if (dineroDany >= 100 && dineroDany <= 120) {
+    alert("Comprate helado de tramontana");
+}
+
+else if (dineroDany < 10) {
+    alert("no te alcanza para nada");
 }
 
 else {
-    alert("No te alcanza")
+    alert("el valor ingresado no es correcto.");
+}
+
+
+
+
+if (dineroClau >= 10 && dineroClau <= 30) {
+    alert("Comprate helado de limon");
+}
+
+else if (dineroClau >= 40 && dineroClau <= 60) {
+    alert("Comprate helado de dulce de leche");
+}
+
+else if (dineroClau >= 70 && dineroClau <= 90) {
+    alert("Comprate helado de chocolate");
+}
+
+else if (dineroClau >= 100 && dineroClau <= 120) {
+    alert("Comprate helado de tramontana");
+}
+
+else if (dineroClau < 10) {
+    alert("no te alcanza para nada");
+}
+
+else {
+    alert("el valor ingresado no es correcto.");
 }
