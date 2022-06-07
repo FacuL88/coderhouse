@@ -36,7 +36,7 @@ else if (dineroDany >= 40 && dineroDany <= 60) {
     alert("Comprate helado de dulce de leche");
 }
 
-else if (dineroDany >= 70 && dineroDany <= 90 {
+else if (dineroDany >= 70 && dineroDany <= 90) {
     alert("Comprate helado de chocolate");
 }
 
