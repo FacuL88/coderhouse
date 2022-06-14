@@ -1,31 +1,46 @@
-/* for */
+/* ALGORITMO CON WHILE */
 
-/* for(let i = 0; i < 10; i++){
-    console.log("hola a todos", i);
-} */
-
-/* While */
-
-/* let nombre = prompt("ingrese un nombre");
-let limite = 0;
+/* let nombre = prompt("Ingrese su nombre para ingresar");
 
 while (nombre != "Facu") {
-    alert("nombre incorrecto");
+    alert("Nombre incorrecto");
 
-    if (limite === 3) {
-        break;
-    }
-
-    limite++;
-
-    nombre = prompt("ingrese el nombre correcto");
+    nombre = prompt("Para acceder ingrese nombre correcto");
 }
 
-if (limite === 3) {
-    alert("estas bloqueado");
-}else {
-    alert("hola Facu");
+alert(`hola ${nombre}`); */
+
+/* ALGORITMO CON IF */
+
+/* alert("Para entrar al bar debera ingresar su edad");
+
+let num = parseInt(prompt("A continuacion ingrese su edad"));
+
+if (num >= 18) {
+    alert("Podes pasar");
+}
+else if (num < 18) {
+    alert("Los menores no pueden ingresar");
 } */
 
-/* switch */
+/* FUNCION CON CONDICIONAL IF */
 
+/* function saludar() {    
+    let saludo = prompt("Hola Facu, ¿Como estuvo tu dia?")
+    if (saludo === "bien") {
+        alert("Que bueno!");
+    }else if (saludo === "mal") {
+        alert("Que pena");
+    }
+}
+
+saludar(); */
+
+/* BUCLE FOR */
+
+/* let numero = parseInt(prompt("ingrese un numero"));
+
+for (let index = 1; index <= 10; index++) {
+    let resultado = numero * index;
+    alert(numero + " X " + index + " = " + resultado);
+} */
