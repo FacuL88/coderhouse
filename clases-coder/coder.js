@@ -29,14 +29,3 @@ if (limite === 3) {
 
 /* switch */
 
-let edad = 18;
-
-if (edad === 10) {
-    console.log("no puede entrar a la fiesta");
-}else if (edad === 15) {
-    console.log("puede entrar a la fiesta con un adulto");
-}else if (edad === 18) {
-    console.log("puede entrar con un amigo"); 
-}else {
-    console.log("puede entrar a la fiesta solo");
-}
