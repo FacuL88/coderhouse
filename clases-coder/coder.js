@@ -44,3 +44,37 @@ for (let index = 1; index <= 10; index++) {
     let resultado = numero * index;
     alert(numero + " X " + index + " = " + resultado);
 } */
+
+
+/* ESTRUCTURA DE UNA FUNCION  */
+
+/* function mensaje(){
+    console.log("hola a todos");
+}
+
+mensaje(); */
+
+/* function pedirDato(){
+    let nombre = prompt("Hola ingresa tu nombre");
+    alert("el nombre ingresado es: " + nombre)
+}
+
+pedirDato(); */
+
+/* let apellido = "laugle";
+
+{
+    let nombre = "facu";
+    console.log(nombre);
+}
+
+console.log(apellido); */
+
+let num1 = parseInt(prompt("Ingrese numero para sumar"));
+let num2 = parseInt(prompt("Segundo numero para sumar"));
+
+const suma = (num1, num2) => num1 + num2;
+
+let resultado = suma(num1, num2);
+
+alert(resultado);
