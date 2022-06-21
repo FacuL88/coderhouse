@@ -79,3 +79,14 @@ let resultado = suma(num1, num2);
 
 alert(resultado); */
 
+
+/* OBJETOS */
+
+function paciente(nombre, apellido) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+}
+
+const paciente1 = new paciente("Facundo", "Laugle");
+
+console.log(paciente);
