@@ -69,7 +69,7 @@ pedirDato(); */
 }
 
 console.log(apellido); */
-
+/* 
 let num1 = parseInt(prompt("Ingrese numero para sumar"));
 let num2 = parseInt(prompt("Segundo numero para sumar"));
 
@@ -77,4 +77,4 @@ const suma = (num1, num2) => num1 + num2;
 
 let resultado = suma(num1, num2);
 
-alert(resultado);
+alert(resultado); */
