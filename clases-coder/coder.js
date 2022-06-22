@@ -82,11 +82,54 @@ alert(resultado); */
 
 /* OBJETOS */
 
-function paciente(nombre, apellido) {
+/* /* /* Funcion constructora */
+
+/* function Paciente(nombre, apellido) {
     this.nombre = nombre;
     this.apellido = apellido;
+};
+
+const paciente1 = new Paciente("Facundo", "Laugle");
+const paciente2 = new Paciente("german", "leiner");
+
+
+console.log(paciente1.nombre); 
+console.log(paciente2.nombre);  */
+
+
+/* function Alumno(objeto) {
+    this.nombre = objeto.nombre;
+    this.edad = objeto.edad;
+    this.acudiente = objeto.acudiente;
+};
+
+const alumno1 = new Alumno({nombre: "damian", edad: 32, acudiente: "claudia"});
+
+console.log(alumno1.acudiente);
+ */
+
+/* const persona = {
+    nombre: "andres",
+    edad: 36,
+    domicilio: "av melian 3880"
+};
+
+for(const propiedad in persona){
+    console.log(persona[propiedad]);
+} */
+
+class Persona{
+    constructor(nombre, edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    hablar(){
+        console.log("hablando");
+    }
 }
 
-const paciente1 = new paciente("Facundo", "Laugle");
+const persona1 = new Persona("andres", 33);
+console.log(persona1);
 
-console.log(paciente);
+persona1.hablar();
