@@ -1,6 +1,6 @@
 /* ALGORITMO CON WHILE */
 
-/* let nombre = prompt("Ingrese su nombre para ingresar");
+let nombre = prompt("Ingrese su nombre para ingresar");
 
 while (nombre != "Facu") {
     alert("Nombre incorrecto");
@@ -8,7 +8,7 @@ while (nombre != "Facu") {
     nombre = prompt("Para acceder ingrese nombre correcto");
 }
 
-alert(`hola ${nombre}`); */
+alert(`hola ${nombre}`);
 
 /* ALGORITMO CON IF */
 
@@ -118,7 +118,7 @@ for(const propiedad in persona){
     console.log(persona[propiedad]);
 } */
 
-class Persona{
+/* class Persona{
     constructor(nombre, edad){
         this.nombre = nombre;
         this.edad = edad;
@@ -132,4 +132,4 @@ class Persona{
 const persona1 = new Persona("andres", 33);
 console.log(persona1);
 
-persona1.hablar();
+persona1.hablar(); */
