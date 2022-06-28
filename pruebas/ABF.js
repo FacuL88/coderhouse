@@ -1,4 +1,4 @@
-/* let pc = {
+let pc = {
     nombre: "Facu",
     procesador: "Intel dual core",
     ram: "16GB",
@@ -17,7 +17,7 @@ frase = `el nombre de mi p c es: <b>${nombre}</b><br>
          el espacio en disco es: <b>${espacio}</b><br>
          `
 
-         document.write(frase); */
+         document.write(frase);
        
 let frutas = ["banana", "manzana", "pera", 5, 9, "pedro"];
 
