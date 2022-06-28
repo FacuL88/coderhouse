@@ -1,6 +1,6 @@
 /* ALGORITMO CON WHILE */
 
-let nombre = prompt("Ingrese su nombre para ingresar");
+/* let nombre = prompt("Ingrese su nombre para ingresar");
 
 while (nombre != "Facu") {
     alert("Nombre incorrecto");
@@ -9,7 +9,7 @@ while (nombre != "Facu") {
 }
 
 alert(`hola ${nombre}`);
-
+ */
 /* ALGORITMO CON IF */
 
 /* alert("Para entrar al bar debera ingresar su edad");

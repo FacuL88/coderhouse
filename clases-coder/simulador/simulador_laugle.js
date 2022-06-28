@@ -28,3 +28,22 @@ function iniciar() {
 
 
 iniciar();
+
+let pc = {
+    nombre: "Facu",
+    procesador: "intel",
+    memoria: "1TB",
+    disco: "1TB",
+};
+
+let nombre = pc ["nombre"];
+let procesador = pc ["procesador"];
+let memoria = pc ["memoria"];
+let disco = pc ["disco"];
+
+let frase = `el nombre de mi pc es: <b>${nombre}</b><br>
+             el procesador de mi pc es: <b>${procesador}</b><br>
+             la memoria de mi pc es: <b>${memoria}</b><br>
+             el disco de mi pc es: <b>${disco}</b><br>`
+
+             document.write(frase);

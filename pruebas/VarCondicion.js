@@ -1,4 +1,4 @@
-dineroFacu = prompt("¿Cuanto dinero tenes facu?");
+/* dineroFacu = prompt("¿Cuanto dinero tenes facu?");
 dineroDany = prompt("¿Cuanto dinero tenes dany?");
 dineroClau = prompt("¿Cuanto dinero tienes clau?");
 
@@ -78,3 +78,4 @@ else if (dineroClau < 10) {
 else {
     alert("el valor ingresado no es correcto.");
 }
+ */

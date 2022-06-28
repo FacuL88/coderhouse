@@ -38,7 +38,7 @@ let valor = productos.some(elemento => elemento.precio === 700);
 
 console.log(valor); */
 
-const productos = [
+/* const productos = [
     {nombre: "pc intel", precio: 48500},
     {nombre: "pc amd", precio: 35500},
     {nombre: "notebook", precio: 20000},
@@ -47,4 +47,12 @@ const productos = [
 let precios = productos.map(elemento => elemento.precio);
 let nombres = productos.map(elemento => elemento.nombre);
 
-console.log(nombres, precios);
+console.log(nombres, precios); */
+
+const productos = [
+    {nombre: "pc intel", precio: 48500},
+    {nombre: "pc amd", precio: 35500},
+    {nombre: "notebook", precio: 20000},
+];
+
+
