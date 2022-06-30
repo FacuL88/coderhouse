@@ -133,3 +133,4 @@ const persona1 = new Persona("andres", 33);
 console.log(persona1);
 
 persona1.hablar(); */
+
