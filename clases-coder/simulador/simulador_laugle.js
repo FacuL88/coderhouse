@@ -78,10 +78,23 @@ const contenidoMain = document.getElementById("contenidoMain");
 
 const agregarAlCarrito = (productoId) => {
     const item = stockProductos.find((producto) => producto.id === productoId)
-    carrito.push(item)
     actualizarCarrito()
-    console.log(carrito);
+    carrito.push(item)
 };
 
+const carritoContenedor = document.getElementById(`carritoContenedor`);
 
+const actualizarCarrito = () => {
+    carritoContenedor.innerHTML = ""
+    carrito.forEach((producto) => {
+        const div = document.createElement(`div`)
+        div.innerHTML = `
+        <p>${producto.nombre}</p>
+        <p>Precio: ${producto.precio}</p>
+        <p>Cantidad: <span id="cantidad">${producto.cantidad}</span></p>
+        <button onclick ="eliminarDelCarrito(${producto.id})" class="boton-eliminar">
+        `
+        carritoContenedor.appendChild(div);
+    })
+}
 

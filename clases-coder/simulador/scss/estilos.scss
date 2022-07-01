@@ -13,10 +13,22 @@ body {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-items: center;
+    
+    @media screen and (max-width: 576px) {
+        .imgCarrito {
+            margin: 0px 5px;
+        }
+    
+        .lista {
+            margin: 0px 5px;
+        }
+    }
 }
+
 
 .imgCarrito {
     width: 25px;
+    margin: 0px 25px;
 }
 
 .lista {
