@@ -1,4 +1,4 @@
-alert("Bienvenido! A continuacion ingresa tus datos");
+/* alert("Bienvenido! A continuacion ingresa tus datos");
 
 function iniciar() {
     let usuario = prompt("Ingrese su nombre de usuario");
@@ -29,21 +29,59 @@ function iniciar() {
 
 iniciar();
 
-let pc = {
-    nombre: "Facu",
-    procesador: "intel",
-    memoria: "1TB",
-    disco: "1TB",
+ */
+
+
+const contenidoHeader = document.getElementById(`contenidoHeader`);
+const div = document.createElement(`div`)
+div.classList.add("lista")
+div.innerHTML = `<li>Productos</li>
+<li>Contacto</li>
+<img src="./img/cart.svg" class="imgCarrito">
+`
+contenidoHeader.appendChild(div);
+
+let stockProductos = [
+    {id: 1, nombre: "remera", desc: "Remera mangas largas confeccionado en lycra frisada.", precio: 1500, img: "./img/remera.jpg"},
+    {id: 2, nombre: "remera", desc: "Remera mangas largas confeccionado en lycra frisada.", precio: 1500, img: "./img/remera.jpg"},
+    {id: 3, nombre: "remera", desc: "Remera mangas largas confeccionado en lycra frisada.", precio: 1500, img: "./img/remera.jpg"},
+    {id: 4, nombre: "pantalon", desc: "Jean basico confeccionado en denim elastizado.", precio: 1500, img: "./img/pantalon.jpg"},
+    {id: 5, nombre: "pantalon", desc: "Jean basico confeccionado en denim elastizado.", precio: 1500, img: "./img/pantalon.jpg"},
+    {id: 6, nombre: "pantalon", desc: "Jean basico confeccionado en denim elastizado.", precio: 1500, img: "./img/pantalon.jpg"},
+    {id: 7, nombre: "campera", desc: "Campera confeccionada en algodón frisado con lycra.", precio: 1500, img: "./img/campera.jpg"},
+    {id: 8, nombre: "campera", desc: "Campera confeccionada en algodón frisado con lycra.", precio: 1500, img: "./img/campera.jpg"},
+    {id: 9, nombre: "campera", desc: "Campera confeccionada en algodón frisado con lycra.", precio: 1500, img: "./img/campera.jpg"},
+]
+
+const contenidoMain = document.getElementById("contenidoMain");
+
+    let carrito = []
+    
+    stockProductos.forEach(producto => {
+    const div = document.createElement(`div`) 
+    div.classList.add(`productos`)
+    div.innerHTML = `
+    <img src=${producto.img} alt="">
+    <h2>${producto.nombre}</h2> 
+    <p class="descripcion">${producto.desc}</p>
+    <p class="precioProducto">Precio:${producto.precio}</p>
+    <button id="agregar${producto.id}" class="boton-agregar">Agregar</button>`
+
+    contenidoMain.appendChild(div)
+
+    const boton = document.getElementById(`agregar${producto.id}`)
+
+    boton.addEventListener(`click`, ()=> {
+        agregarAlCarrito(producto.id)
+    })
+});
+
+const agregarAlCarrito = (productoId) => {
+    const item = stockProductos.find((producto) => producto.id === productoId)
+    carrito.push(item)
+    actualizarCarrito()
+    console.log(carrito);
 };
 
-let nombre = pc ["nombre"];
-let procesador = pc ["procesador"];
-let memoria = pc ["memoria"];
-let disco = pc ["disco"];
 
-let frase = `el nombre de mi pc es: <b>${nombre}</b><br>
-             el procesador de mi pc es: <b>${procesador}</b><br>
-             la memoria de mi pc es: <b>${memoria}</b><br>
-             el disco de mi pc es: <b>${disco}</b><br>`
 
-             document.write(frase);
