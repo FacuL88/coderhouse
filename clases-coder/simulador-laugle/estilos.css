@@ -1,0 +1,75 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background: #ccc;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    border-bottom: 1px solid black;
+}
+
+.tituloTalles {
+    margin: 20px;
+}
+
+#boton-carrito {
+    width: 60px;
+}
+
+#boton-carrito img {
+    width: 20px;
+}
+
+#contadorCarrito {
+    padding: 0px 10px;
+    font-size: medium;
+}
+
+#filtroTalle { 
+    width: 150px;
+    margin: 0px 15px;
+}
+
+.element {
+    justify-self: center;
+    align-self: center;
+    background-color: darkgrey;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.element img {    
+    width: 200px;
+}
+
+#contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-content: center;
+    grid-column-gap: 10px;
+    padding: 15px;
+}
+
+.boton-agregar {
+    padding-bottom: 7px;
+}
+
+.boton-agregar img {
+    width: 20px;
+}
+
+.modal-contenedor {
+    border: 3px solid black;
+}
